@@ -33,6 +33,39 @@ console.log(toyota.hock())
 console.log(toyota.drive())
 
 
+// When should be use classes 
+
+react.createClass({
+    doSomething(){
+
+        return 'Function One Value'
+
+    }
+    doSomethingSpecial(){
+
+        return 'Function Two Value'
+
+    }
+});
+
+// Solving reacti with class base views
+
+
+class myComponent extends Component{
+    
+    doSomething(){
+
+    }
+
+    doSomethingElse(){
+
+    }
+}
+
+
+
+
+
 
 
 
