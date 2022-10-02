@@ -1,7 +1,8 @@
 class Car{
+    // Initialized your constructor
    constructor({ title}){
 
-    thies.title=title
+    this.title=title
 
     }
     drive(){
@@ -10,9 +11,52 @@ class Car{
 
 }
 
-const car= new Car({title:'Toyota'})
-console.log(car.drive())
-console.log(car.title)
+// Inherit Car class
+class Toyota extends Car{
+
+    constructor(options){
+
+        super(options); // I want to call Car.constructor()
+
+        this.color=options.color
+
+    }
+
+    hock(){
+        return 'some hook display out'
+    }
+}
+
+const toyota=new Toyota({'color':'red'})
+
+console.log(toyota.hock())
+console.log(toyota.drive())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
